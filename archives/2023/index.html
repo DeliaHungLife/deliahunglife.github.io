@@ -244,13 +244,57 @@
                 <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(2)">
                   <span>
                     
-                      <i class="fa-solid fa-share-nodes"></i>
+                      <i class="fas fa-film"></i>
                     
-                    <span class="name">友情連結</span>
+                    <span class="name">相簿</span>
                   </span>
                   <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(2)}" aria-hidden="true"></i>
                 </a>
                 <ul class="drawer-sub-menu" v-if="isOpen(2)">
+                  
+                  <li>
+                    <a href="/gallery/location-shooting">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>外拍</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/gallery/tour-shooting">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>旅拍</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/gallery/studio-shooting">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>棚拍</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(3)">
+                  <span>
+                    
+                      <i class="fa-solid fa-share-nodes"></i>
+                    
+                    <span class="name">友情連結</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(3)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(3)">
                   
                   <li>
                     <a href="/friend/photographer">
@@ -358,6 +402,48 @@
                   
                   <span class="name">關於我</span>
                 </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="相簿">
+                  
+                    <i class="fas fa-film"></i>
+                  
+                  <span class="name">相簿</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/gallery/location-shooting">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>外拍</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/gallery/tour-shooting">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>旅拍</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/gallery/studio-shooting">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>棚拍</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
