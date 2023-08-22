@@ -10,10 +10,21 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6WV0HPTDVP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
 
-  <title>archives: 2023/8 | 小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</title>
+    gtag('js', new Date());
+    gtag('config', 'G-6WV0HPTDVP');
+</script>
 
-  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico">
+
+  <title>archives: 2023/8 | 小鈞🏳️‍⚧️🔞(♂️➡️♀️)</title>
+
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
   <link href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
@@ -197,9 +208,9 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
-      <h3 class="drawer-box-head_title">小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</h3>
-      <h5 class="drawer-box-head_desc">小鈞的生活部落格(Delia&#39;s Life Blog)</h5>
+      <img class="drawer-box-head_logo lazyload placeholder" src="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+      <h3 class="drawer-box-head_title">小鈞🏳️‍⚧️🔞(♂️➡️♀️)</h3>
+      <h5 class="drawer-box-head_desc">跨性別日常、業餘模特、保養穿搭、cosplay</h5>
     </div>
     
     <div class="drawer-box-content">
@@ -212,8 +223,54 @@
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">Home</span>
+                  <span class="name">首頁</span>
                 </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/about" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-film" aria-hidden="true"></i>
+                  
+                  <span class="name">關於我</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(2)">
+                  <span>
+                    
+                      <i class="fa-solid fa-share-nodes"></i>
+                    
+                    <span class="name">友情連結</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(2)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(2)">
+                  
+                  <li>
+                    <a href="/friend/photographer">
+                      
+                      <i class="fa-solid fa-video" style="margin-top: -20px;"></i>
+                      
+                      <span>合作攝影</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friend/friend-social-Link">
+                      
+                      <i class="fa-solid fa-user-group" style="margin-top: -20px;"></i>
+                      
+                      <span>好友社群</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -273,10 +330,10 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+          <img src="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
         </div>
       
-      <a href="/" class="logo">小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</a>
+      <a href="/" class="logo">小鈞🏳️‍⚧️🔞(♂️➡️♀️)</a>
     </div>
     <nav class="navbar">
       <ul class="menu">
@@ -284,12 +341,56 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/" class="menu-item-link" title="Home">
+                <a href="/" class="menu-item-link" title="首頁">
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">Home</span>
+                  <span class="name">首頁</span>
                 </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/about" class="menu-item-link" title="關於我">
+                  
+                    <i class="fas fa-film" aria-hidden="true"></i>
+                  
+                  <span class="name">關於我</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="友情連結">
+                  
+                    <i class="fa-solid fa-share-nodes"></i>
+                  
+                  <span class="name">友情連結</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/friend/photographer">
+                      
+                      <i class="fa-solid fa-video" style="margin-top: -20px;"></i>
+                      
+                      <span>合作攝影</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friend/friend-social-Link">
+                      
+                      <i class="fa-solid fa-user-group" style="margin-top: -20px;"></i>
+                      
+                      <span>好友社群</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           

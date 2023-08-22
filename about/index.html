@@ -10,10 +10,21 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6WV0HPTDVP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
 
-  <title>關於我 | 小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</title>
+    gtag('js', new Date());
+    gtag('config', 'G-6WV0HPTDVP');
+</script>
 
-  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico">
+
+  <title>關於我 | 小鈞🏳️‍⚧️🔞(♂️➡️♀️)</title>
+
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
   <link href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
@@ -197,9 +208,9 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
-      <h3 class="drawer-box-head_title">小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</h3>
-      <h5 class="drawer-box-head_desc">小鈞的生活部落格(Delia&#39;s Life Blog)</h5>
+      <img class="drawer-box-head_logo lazyload placeholder" src="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+      <h3 class="drawer-box-head_title">小鈞🏳️‍⚧️🔞(♂️➡️♀️)</h3>
+      <h5 class="drawer-box-head_desc">跨性別日常、業餘模特、保養穿搭、cosplay</h5>
     </div>
     
     <div class="drawer-box-content">
@@ -212,8 +223,54 @@
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">Home</span>
+                  <span class="name">首頁</span>
                 </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/about" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-film" aria-hidden="true"></i>
+                  
+                  <span class="name">關於我</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(2)">
+                  <span>
+                    
+                      <i class="fa-solid fa-share-nodes"></i>
+                    
+                    <span class="name">友情連結</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(2)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(2)">
+                  
+                  <li>
+                    <a href="/friend/photographer">
+                      
+                      <i class="fa-solid fa-video" style="margin-top: -20px;"></i>
+                      
+                      <span>合作攝影</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friend/friend-social-Link">
+                      
+                      <i class="fa-solid fa-user-group" style="margin-top: -20px;"></i>
+                      
+                      <span>好友社群</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -273,10 +330,10 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+          <img src="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
         </div>
       
-      <a href="/" class="logo">小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</a>
+      <a href="/" class="logo">小鈞🏳️‍⚧️🔞(♂️➡️♀️)</a>
     </div>
     <nav class="navbar">
       <ul class="menu">
@@ -284,12 +341,56 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/" class="menu-item-link" title="Home">
+                <a href="/" class="menu-item-link" title="首頁">
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">Home</span>
+                  <span class="name">首頁</span>
                 </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/about" class="menu-item-link" title="關於我">
+                  
+                    <i class="fas fa-film" aria-hidden="true"></i>
+                  
+                  <span class="name">關於我</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="友情連結">
+                  
+                    <i class="fa-solid fa-share-nodes"></i>
+                  
+                  <span class="name">友情連結</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/friend/photographer">
+                      
+                      <i class="fa-solid fa-video" style="margin-top: -20px;"></i>
+                      
+                      <span>合作攝影</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friend/friend-social-Link">
+                      
+                      <i class="fa-solid fa-user-group" style="margin-top: -20px;"></i>
+                      
+                      <span>好友社群</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -421,92 +522,28 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/avatar2.jpg" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/avatar2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" width=800>
-
-<p>C#後端工程師，畢業於屏東大學資訊管理系，2021年9月開始工程師之路，目前年資兩年，對於程式架構方面有很大的興趣，業餘時間會去各大社群看資深前輩們技術分享教學。</p>
-<p>參與過電商系統翻新，負責核心訂單、購物車API開發，擅長電商金流、貨態、庫存變化…等領域知識，也參與過ERP系統流程規劃、微服務架構規劃、ERP後端API開發。</p>
-<ul>
-<li>位置: Taipei City, Taiwan</li>
-<li>電話: 0971080029</li>
-<li>信箱: <a href="mailto:&#x70;&#x69;&#x6e;&#x67;&#99;&#104;&#117;&#x6e;&#x2e;&#x68;&#x75;&#110;&#103;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#x70;&#x69;&#x6e;&#x67;&#99;&#104;&#117;&#x6e;&#x2e;&#x68;&#x75;&#110;&#103;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></li>
-<li>我的履歷: <a target="_blank" rel="noopener" href="https://www.cakeresume.com/pingchun.hung">CakeResume</a></li>
-<li>GitHub: <a target="_blank" rel="noopener" href="https://github.com/DeliaHung">Deliahung</a></li>
-</ul>
-<hr>
-<h1 id="技能清單"><a href="#技能清單" class="headerlink" title="技能清單"></a>技能清單</h1><ul>
-<li>後端語言 &amp; 框架<br><code>C#</code> <code>ASP.NET Core</code> <code>ASP.NET Framwork</code> <code>WinFrom</code></li>
-<li>SQL<br><code>SQLServer</code> <code>MongoDB</code></li>
-<li>ORM<br><code>Entity Framwork</code> <code>Dapper</code> <code>ADO.NET</code></li>
-<li>前端<br><code>HTML5</code> <code>CSS3</code> <code>jQuery</code> <code>Bootstrap</code> <code>Vue.js</code></li>
-<li>版本控制<br><code>SVN</code> <code>Git</code></li>
-<li>CI&#x2F;CD<br><code>Jenkins</code> <code>Bitbucket Pipeline</code></li>
-</ul>
-<hr>
-<h1 id="工作經歷"><a href="#工作經歷" class="headerlink" title="工作經歷"></a>工作經歷</h1><h2 id="無毒農-2022-9-NOW"><a href="#無毒農-2022-9-NOW" class="headerlink" title="無毒農(2022&#x2F;9 ~ NOW)"></a>無毒農(2022&#x2F;9 ~ NOW)</h2><h3 id="MediatR導入"><a href="#MediatR導入" class="headerlink" title="MediatR導入"></a>MediatR導入</h3><p>將Controller、Service解偶，Api對應的UseCase獨立單獨Handler處理， 大幅<code>增加專案可讀性</code>、<code>可維護性</code>，同事都說讚。</p>
-<blockquote>
-<p>修改前</p>
-</blockquote>
-<img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/2023072402.png" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/2023072402.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" width=600>
-
-<blockquote>
-<p>修改後</p>
-</blockquote>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">readonly</span> Isender _sender;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PersonController</span>(<span class="params">ISender sender</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    _sender = sender;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[<span class="meta">HttpGet</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">async</span> Task&lt;IActionResult&gt; <span class="title">GetPersonPage</span>(<span class="params">GetPersonPageQuery</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">await</span> _sender.send(GetPersonPageQuery)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[<span class="meta">HttpGet</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">async</span> Task&lt;IActionResult&gt; <span class="title">GetPersonById</span>(<span class="params">GetPersonQuery</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">await</span> _sender.send(GetPersonQuery)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[<span class="meta">HttpPost</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">async</span> Task&lt;IActionResult&gt; <span class="title">CreatePerson</span>(<span class="params">CreatePersonCommand</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">await</span> _sender.send(CreatePersonCommand)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/2023072403.png" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/2023072403.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" width=400>
-
-<h3 id="UnitOfWork導入"><a href="#UnitOfWork導入" class="headerlink" title="UnitOfWork導入"></a>UnitOfWork導入</h3><p>將每個Repossitory內的SaveChange抽離出來，外面包一層Unit Of Work，<code>減少建構子注入</code>、<code>劃分服務領域</code>、<code>Transation語法更直觀</code>。</p>
-<img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/2023072401.png" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/2023072401.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" width=600>
-
-<h3 id="NET-Core-訊息微服務建置"><a href="#NET-Core-訊息微服務建置" class="headerlink" title=".NET Core 訊息微服務建置"></a>.NET Core 訊息微服務建置</h3><p>使用.NET CAP套件，用KAFKA作為Event bus傳遞事件。<br><a target="_blank" rel="noopener" href="https://tech.deliahung.com/2023/07/08/Net-Core-CAP/">本站文章連結</a></p>
-<blockquote>
-<p>整體架構</p>
-</blockquote>
-<img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/CAP.png" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/about/CAP.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" width=600>
-
-<blockquote>
-<p>寄送簡訊設計模式</p>
-</blockquote>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> setting = _SmsSetting.Filter(_ =&gt; _.Enable).OrderBy(_ =&gt; _.Sort).ToList();</span><br><span class="line"></span><br><span class="line"><span class="keyword">foreach</span>(<span class="keyword">var</span> item <span class="keyword">in</span> settings)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> smsProvider = _smsFactory.GetSmsProvider(item.SmsProvierType);</span><br><span class="line">    <span class="comment">//紀錄log...</span></span><br><span class="line">    <span class="keyword">var</span> smsReponseDto = smsProvier.Send(smsRequestDto);</span><br><span class="line">    <span class="comment">//紀錄log...</span></span><br><span class="line">    <span class="keyword">if</span> (smsResponseDto.IsSuccess) <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="解決歷年週年慶搶購活動超賣問題"><a href="#解決歷年週年慶搶購活動超賣問題" class="headerlink" title="解決歷年週年慶搶購活動超賣問題"></a>解決歷年週年慶搶購活動超賣問題</h3><p>單機鎖lock語句、Redis鎖、樂觀鎖、悲觀鎖實作&amp;分享</p>
-<p><a target="_blank" rel="noopener" href="https://tech.deliahung.com/2023/06/21/EFCore-Concurrency/">本站文章連結</a></p>
-<h3 id="UnitTest導入"><a href="#UnitTest導入" class="headerlink" title="UnitTest導入"></a>UnitTest導入</h3><p>使用<code>NUnit</code> with FluentAssertions &amp; AutoFixture &amp; NSubstitute。</p>
-<h3 id="FluentValidation導入"><a href="#FluentValidation導入" class="headerlink" title="FluentValidation導入"></a>FluentValidation導入</h3><p><code>統一參數驗證方法</code>，搭配MediatR Pipeline統一處理Exception，並且<code>更好做單元測試</code>。</p>
-<h2 id="聯邦網通-2021-9-2022-9"><a href="#聯邦網通-2021-9-2022-9" class="headerlink" title="聯邦網通(2021&#x2F;9 ~ 2022&#x2F;9)"></a>聯邦網通(2021&#x2F;9 ~ 2022&#x2F;9)</h2><h3 id="電商系統翻新"><a href="#電商系統翻新" class="headerlink" title="電商系統翻新"></a>電商系統翻新</h3><p>維持原本Database、後臺系統，將邏輯層改寫為API前後分離，了解許多電商領域知識。</p>
-<h3 id="訂單、購物車API"><a href="#訂單、購物車API" class="headerlink" title="訂單、購物車API"></a>訂單、購物車API</h3><p>處理<code>折扣邏輯</code>、<code>購物車驗證</code>、<code>購物車分車邏輯</code>、<code>訂單狀態</code>、<code>庫存控制</code>。</p>
-<h3 id="金流串接"><a href="#金流串接" class="headerlink" title="金流串接"></a>金流串接</h3><p><code>聯邦串接</code>、<code>Line Pay金串接</code></p>
-<h3 id="物流串接"><a href="#物流串接" class="headerlink" title="物流串接"></a>物流串接</h3><p><code>黑貓</code></p>
-<h3 id="小工具API"><a href="#小工具API" class="headerlink" title="小工具API"></a>小工具API</h3><p>banner、館別資訊…等存入快取<code>增加讀取速度</code>。</p>
-<h3 id="聯邦年節團購網站佈署維護"><a href="#聯邦年節團購網站佈署維護" class="headerlink" title="聯邦年節團購網站佈署維護"></a>聯邦年節團購網站佈署維護</h3><p>webform的老舊專案重新佈署。</p>
-<h3 id="聯邦紅利兌換網站佈署維護"><a href="#聯邦紅利兌換網站佈署維護" class="headerlink" title="聯邦紅利兌換網站佈署維護"></a>聯邦紅利兌換網站佈署維護</h3><p>webform的老舊專案重新佈署。</p>
-<h2 id="資策會C-工程師就業養成班-2021-1-2021-8"><a href="#資策會C-工程師就業養成班-2021-1-2021-8" class="headerlink" title="資策會C#工程師就業養成班 (2021&#x2F;1 ~ 2021&#x2F;8)"></a>資策會C#工程師就業養成班 (2021&#x2F;1 ~ 2021&#x2F;8)</h2><h3 id="擔任專題技術長，負責小組畢業專題規劃，食譜-購物電商"><a href="#擔任專題技術長，負責小組畢業專題規劃，食譜-購物電商" class="headerlink" title="擔任專題技術長，負責小組畢業專題規劃，食譜&amp;購物電商"></a>擔任專題技術長，負責小組畢業專題規劃，食譜&amp;購物電商</h3><h3 id="專題導入三層式架構，IOC控制反轉，唯一有分層的組別"><a href="#專題導入三層式架構，IOC控制反轉，唯一有分層的組別" class="headerlink" title="專題導入三層式架構，IOC控制反轉，唯一有分層的組別"></a>專題導入三層式架構，IOC控制反轉，唯一有分層的組別</h3><hr>
-<h1 id="近期學習目標"><a href="#近期學習目標" class="headerlink" title="近期學習目標"></a>近期學習目標</h1><ul>
-<li>持續練習OOP、設計模式</li>
-<li>研究 DDD、Clean Architecture</li>
-</ul>
-
+        <h1 id="八年女裝，不一樣的偽娘、跨性別歷程"><a href="#八年女裝，不一樣的偽娘、跨性別歷程" class="headerlink" title="八年女裝，不一樣的偽娘、跨性別歷程"></a>八年女裝，不一樣的偽娘、跨性別歷程</h1><p>大家好我是小鈞，目前是個完全女裝生活的爆肝工程師，假日會接一些旅拍、外拍，夢想成為專業大尺跨性別模特。</p>
+<p>8年前我就很常在場外發腿照、女裝文章，這裡是我女裝的母校，如果沒有看到場外的女裝前輩們，我可能還是一個討厭自己的厭世醜男，4年前因為一些感情事加上女裝高手太多，自己打扮文章又被噓到爆，所以退出了這個圈子，所以決定先努力改變自己，不管是工作、外貌、穿搭、女子力…等等。我一直想要變得很完美再回來發文，結果一蹲就是4年XD </p>
+<p>最近有些小成就，想再回來發文分享變化，也希望藉由我的故事可以幫助到「因為性別焦慮困擾，卻又懷疑自己的狀態，不敢往前的人」，也能讓大眾認識真實生活中的跨性別，場外已經是我陌生的環境，但卻有那麼一點熟悉感，為了這篇文章我準備滿久的&gt;&lt;</p>
+<p>因為歷程故事實在太長，覺得塞爆一樓似乎不太好，會慢慢更新用蓋大樓的方式講自己的故事，讓純粹想看照片的人不用看太多文字，畢竟打那麼多誰看得完.jpg</p>
+<p><img src="https://hackmd.io/_uploads/S1WKP0v23.jpg" class="lazyload placeholder" data-srcset="https://hackmd.io/_uploads/S1WKP0v23.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="https://hackmd.io/_uploads/ryWcDAD23.jpg" class="lazyload placeholder" data-srcset="https://hackmd.io/_uploads/ryWcDAD23.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<h2 id="小時候"><a href="#小時候" class="headerlink" title="小時候"></a>小時候</h2><p>從小我並不像大眾認知的跨性別，並沒有從小就覺得自己就是女生，比較有印象是國小在網路上看到一個超正偽娘之後，直接被打開開關，然後半夜都會偷穿老媽的衣服，有一次被老爸發現床上有我媽的睡衣，被狠狠痛打一遍，隔天午餐在餐桌上被質問到底為甚麼要這樣做，「是跟同學打賭輸了嗎?」、「覺得這樣很好玩嗎?」…每一句質問都深深的刻在我腦子裡，當下我覺得自己行為很噁心很羞恥，所以一句話都沒回，再加上我以前穿女裝…會有反應甚至…做一些色色的事情，罪惡感又更重，於是我選擇遺忘這件事。</p>
+<h2 id="國中、高中直男時期"><a href="#國中、高中直男時期" class="headerlink" title="國中、高中直男時期"></a>國中、高中直男時期</h2><p><img src="https://hackmd.io/_uploads/rk5_p0vn3.jpg" class="lazyload placeholder" data-srcset="https://hackmd.io/_uploads/rk5_p0vn3.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p>如圖..就是個妥妥的直男，因為自己喜歡女生所以這段時間完全沒有懷疑自己的性別認同，剛好這時候也迷上排球，覺得有女生看我打球很爽，我甚至還會雨天脫掉上衣在球場蛙跳，馬的超man&#x3D;&#x3D;，反正覺得自己男生就是要帥帥的，現在回想起來當時似乎有時候會有一點忌妒女生，但我當時不曉得那是什麼感覺，反正就無法想像自己不男不女的樣子，不可能辦到的事情自然就不會多想吧，這麼男樣的自己怎麼可能懷疑自己的性別呢?</p>
+<h2 id="不小心就-又開始女裝"><a href="#不小心就-又開始女裝" class="headerlink" title="不小心就..又開始女裝"></a>不小心就..又開始女裝</h2><p><img src="https://hackmd.io/_uploads/SJ779yu22.png" class="lazyload placeholder" data-srcset="https://hackmd.io/_uploads/SJ779yu22.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="https://hackmd.io/_uploads/HkRiGJ_3h.jpg" class="lazyload placeholder" data-srcset="https://hackmd.io/_uploads/HkRiGJ_3h.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p>附圖已經是比較熟練的女裝打扮了，大學開始接觸到二次元文化，當時偽娘風氣剛盛行，也接觸到了場外的女裝大佬們，便開始了女裝之路，一開始也是發發腿照，用口罩跟貓貓特效讓自己比較能看一點XD，當時覺得單純這樣這樣不配叫偽娘，於是開始嘗試女裝出門，我對自己的目標就是能隱身在人群中，像個普通的女孩子，真正的「偽裝成娘」。</p>
+<p>變化肯定沒有這麼容易，我是一個性別觀極度傳統的人，我不能接受自我連男裝去寶雅，一隻腳都不敢踏進化妝品區，半夜女裝出去走走都會怕到不能走路，接著慢慢練習進超商買東西，直到白天能出去玩音樂遊戲，開始能女裝跟朋友出去玩，我對自己標準滿嚴苛的，假髮一定要洗要護要像真髮一樣，服裝幾乎都是日常妹子樣式，當時的目標一直都是想像個女生能走在路上不被發現，是個想要完全融入生活的偽娘。</p>
+<h2 id="想不開簽了志願役"><a href="#想不開簽了志願役" class="headerlink" title="想不開簽了志願役"></a>想不開簽了志願役</h2><p><img src="https://hackmd.io/_uploads/HkVZfy_33.jpg" class="lazyload placeholder" data-srcset="https://hackmd.io/_uploads/HkVZfy_33.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p>大學因為幾乎都在女裝跟玩音遊，畢業不知道要幹麻，當下只覺得反正我也沒很愛自己的樣子，這一生就平平淡淡的過完就好，假日能女裝和朋友出門打機台就很滿足了，所以想不開簽下去，結果還是超硬的傳統多波道作業兵..機掰&#x3D;&#x3D;</p>
+<p>在軍中遇到滿多好長官，一開始被問line的頭貼(女裝照)是誰，我說是我妹，然後一堆人問能不能認識xd 之後說出來是我，他們也不排斥我假日女裝的樣子，偶爾也會女裝跟兄弟們(?)出去玩</p>
+<h2 id="認識跨性別女友"><a href="#認識跨性別女友" class="headerlink" title="認識跨性別女友"></a>認識跨性別女友</h2><h2 id="性別不安大爆發、不適服退伍"><a href="#性別不安大爆發、不適服退伍" class="headerlink" title="性別不安大爆發、不適服退伍"></a>性別不安大爆發、不適服退伍</h2><p><img src="https://hackmd.io/_uploads/BJqKzy_h2.jpg" class="lazyload placeholder" data-srcset="https://hackmd.io/_uploads/BJqKzy_h2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<h2 id="退伍北漂轉職-HRT"><a href="#退伍北漂轉職-HRT" class="headerlink" title="退伍北漂轉職+HRT"></a>退伍北漂轉職+HRT</h2>
       </div>
       <div class="post-tags-categories">
         
       </div>
-      
-        <div class="copyright">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-    <strong>author:  </strong>小鈞Delia</a>
-    </li>
-    <li class="post-copyright-link">
-    <strong>link:  </strong>
-    <a href="/about/index.html" target="_blank" title="關於我">https://deliahunglife.github.io/about/index.html</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>Copyright notice:   </strong>
-      All articles on this website, unless otherwise stated, adopt <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
-      reprint policy. If reproduced, please indicate source!
-    </li>
-  </ul>
-<div>
       
     </article>
     <!-- 上一篇文章和下一篇文章 -->
@@ -568,7 +605,7 @@
     
       
         <a class='avatar flat-box circle' href='/about/'>
-          <img src='https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/avatar6.jpg'/>
+          <img src='https://s3-tpe-01.russel053.com/delia/life-blog/avatar.png'/>
         </a>
       
     
@@ -578,7 +615,7 @@
           <h2>女裝工程師小鈞</h2>
         
         
-          <p>生活感、日常感、自然感偽娘</p>
+          <p>後端工程師、業餘大尺模特(作品累積中)</p>
 
         
         
@@ -617,6 +654,15 @@
           
             <a href="mailto:pingchun.hung@gmail.com"
               class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://furuke.com/delia/donations/create"
+              class="social fa-solid fa-circle-dollar-to-slot flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
               
@@ -701,7 +747,7 @@
         <div class="webinfo-item">
           <div>最後活動時間：</div>
           
-            <div id="last-update" style="display: none;">Tue Aug 22 2023 02:10:27 GMT+0800 (台北標準時間)</div>
+            <div id="last-update" style="display: none;">Tue Aug 22 2023 20:19:40 GMT+0800 (台北標準時間)</div>
             <div id="last-update-show">2023-08-22 日</div>
           
         </div>

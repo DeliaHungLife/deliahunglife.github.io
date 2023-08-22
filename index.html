@@ -10,10 +10,21 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6WV0HPTDVP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
 
-  <title>小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</title>
+    gtag('js', new Date());
+    gtag('config', 'G-6WV0HPTDVP');
+</script>
 
-  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico">
+
+  <title>小鈞🏳️‍⚧️🔞(♂️➡️♀️)</title>
+
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
   <link href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
@@ -197,9 +208,9 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
-      <h3 class="drawer-box-head_title">小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</h3>
-      <h5 class="drawer-box-head_desc">小鈞的生活部落格(Delia&#39;s Life Blog)</h5>
+      <img class="drawer-box-head_logo lazyload placeholder" src="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+      <h3 class="drawer-box-head_title">小鈞🏳️‍⚧️🔞(♂️➡️♀️)</h3>
+      <h5 class="drawer-box-head_desc">跨性別日常、業餘模特、保養穿搭、cosplay</h5>
     </div>
     
     <div class="drawer-box-content">
@@ -212,8 +223,54 @@
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">Home</span>
+                  <span class="name">首頁</span>
                 </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/about" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-film" aria-hidden="true"></i>
+                  
+                  <span class="name">關於我</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(2)">
+                  <span>
+                    
+                      <i class="fa-solid fa-share-nodes"></i>
+                    
+                    <span class="name">友情連結</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(2)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(2)">
+                  
+                  <li>
+                    <a href="/friend/photographer">
+                      
+                      <i class="fa-solid fa-video" style="margin-top: -20px;"></i>
+                      
+                      <span>合作攝影</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friend/friend-social-Link">
+                      
+                      <i class="fa-solid fa-user-group" style="margin-top: -20px;"></i>
+                      
+                      <span>好友社群</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -273,10 +330,10 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/favicon2.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+          <img src="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" class="lazyload placeholder" data-srcset="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
         </div>
       
-      <a href="/" class="logo">小鈞🏳️‍⚧️🔞(♂️➡️♀️) | 生活部落格</a>
+      <a href="/" class="logo">小鈞🏳️‍⚧️🔞(♂️➡️♀️)</a>
     </div>
     <nav class="navbar">
       <ul class="menu">
@@ -284,12 +341,56 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/" class="menu-item-link" title="Home">
+                <a href="/" class="menu-item-link" title="首頁">
                   
                     <i class="fas fa-home" aria-hidden="true"></i>
                   
-                  <span class="name">Home</span>
+                  <span class="name">首頁</span>
                 </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/about" class="menu-item-link" title="關於我">
+                  
+                    <i class="fas fa-film" aria-hidden="true"></i>
+                  
+                  <span class="name">關於我</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="友情連結">
+                  
+                    <i class="fa-solid fa-share-nodes"></i>
+                  
+                  <span class="name">友情連結</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/friend/photographer">
+                      
+                      <i class="fa-solid fa-video" style="margin-top: -20px;"></i>
+                      
+                      <span>合作攝影</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/friend/friend-social-Link">
+                      
+                      <i class="fa-solid fa-user-group" style="margin-top: -20px;"></i>
+                      
+                      <span>好友社群</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -410,10 +511,10 @@
               </div>
               <div class="flag-text">
                 <div class="flag-text-content">
-                  <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">小鈞森林</div>
+                  <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">Delia&#39;s Blog</div>
                   
                     <div class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="50">
+                      <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="40">
                         <h1 class="typing"></h1>
                       </vue-typed-js>
                     </div>
@@ -421,10 +522,10 @@
                 </div>
                 <div style="display: flex;" class="flag-text-btns">
                   
-                    <div class="ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a target="_blank" rel="noopener" href="https://yuang01.gitee.io/2021/02/08/hexo-theme-bamboo-new/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">關於我</a></div>
+                    <div class="ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a target="_blank" rel="noopener" href="https://life.deliahung.com/about" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">我的故事</a></div>
                   
                   
-                    <div class="ani animated" style="margin-left: 10px;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a target="_blank" rel="noopener" href="https://tech.deliahung.com/" class="read-more swiper-btn-color2" style="display: inline-block; z-index:1;border: 1px solid white;">技術站</a></div>
+                    <div class="ani animated" style="margin-left: 10px;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a target="_blank" rel="noopener" href="https://tech.deliahung.com" class="read-more swiper-btn-color2" style="display: inline-block; z-index:1;border: 1px solid white;">技術網站</a></div>
                   
                 </div>
               </div>
@@ -466,7 +567,7 @@
   var loop = JSON.parse('true') ? false : JSON.parse('true');
   var effect = 'slide';
   var swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
-  var defaultDesc = '願溫柔的你被世界溫柔以待';
+  var defaultDesc = '願溫柔的你,被世界溫柔以待';
   defaultDesc = defaultDesc.split(',');
   var defaultDescTypedLoop = JSON.parse('true');
   var vm = new Vue({
@@ -1012,7 +1113,7 @@
       <h3 class="motto-title">我是誰?</h3>
       <div class="motto-content">
         <p>
-          一個邊緣的MTF跨性別，女裝資歷8年，2021/1/6開始賀爾蒙治療，非常追求現實、生活、自然感的偽娘，身高體重170/53，平時是個社畜後端工程師，夢想成為專業跨性別大尺模特，2023情慾作品累積中，座標台灣雙北，歡迎動漫場次認親，追隨我，就有機會見到日常又自然的偽娘喔  
+          一位MTF跨性別，女裝資歷8年，2021/1/6開始賀爾蒙治療，從以前就非常追求「現實」、「生活」、「自然」的偽娘，身高體重170/53，平時是個社畜後端工程師，夢想成為專業跨性別大尺模特，2023情慾作品累積中，座標台灣雙北，歡迎動漫場次認親，追隨我，就有機會見到日常又自然的偽娘喔  
         </p> 
       </div>
   </div>
@@ -1211,7 +1312,7 @@
 -->
 
 <script>
-  var seamless = JSON.parse('false');
+  var seamless = JSON.parse('true');
   seamless = seamless ? 0 : 30;
   var listData = '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]' || '';
   listData = listData.split(',');
@@ -1672,7 +1773,7 @@
     
       
         <a class='avatar flat-box circle' href='/about/'>
-          <img src='https://s3-tpe-01.russel053.com/delia/delia_tech_hexo/avatar6.jpg'/>
+          <img src='https://s3-tpe-01.russel053.com/delia/life-blog/avatar.png'/>
         </a>
       
     
@@ -1682,7 +1783,7 @@
           <h2>女裝工程師小鈞</h2>
         
         
-          <p>生活感、日常感、自然感偽娘</p>
+          <p>後端工程師、業餘大尺模特(作品累積中)</p>
 
         
         
@@ -1721,6 +1822,15 @@
           
             <a href="mailto:pingchun.hung@gmail.com"
               class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://furuke.com/delia/donations/create"
+              class="social fa-solid fa-circle-dollar-to-slot flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
               
@@ -1805,7 +1915,7 @@
         <div class="webinfo-item">
           <div>最後活動時間：</div>
           
-            <div id="last-update" style="display: none;">Tue Aug 22 2023 02:10:27 GMT+0800 (台北標準時間)</div>
+            <div id="last-update" style="display: none;">Tue Aug 22 2023 20:19:40 GMT+0800 (台北標準時間)</div>
             <div id="last-update-show">2023-08-22 日</div>
           
         </div>
