@@ -470,6 +470,32 @@
   </div>
   
   
+    <div id="he-plugin-simple"></div>
+    <script>
+      WIDGET = {
+        CONFIG: {
+          "modules": "012",
+          "background": 5,
+          "tmpColor": "4A4A4A",
+          "tmpSize": 16,
+          "cityColor": "4A4A4A",
+          "citySize": 16,
+          "aqiSize": 16,
+          "weatherIconSize": 24,
+          "alertIconSize": 18,
+          "padding": "10px 10px 10px 10px",
+          "shadow": "1",
+          "language": "auto",
+          "borderRadius": 5,
+          "fixed": "false",
+          "vertical": "middle",
+          "horizontal": "center",
+          "key": "2784dd3fcb1e4f0f9a9b579bf69641f2"
+        }
+      }
+    </script>
+    <script defer src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script> 
+    
 </header>
         <!-- 内容区域 -->
         
@@ -486,7 +512,7 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://picx.zhimg.com/80/v2-b44931ea513e5f7b3b06f2703f79653c_1440w.webp')">
+  background-position: center center;position: relative;background-image:url('https://s3-tpe-01.russel053.com/delia/life-blog/gallery/230723/07.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
@@ -516,9 +542,9 @@
       <div class="post-content">
         
   <figure class="gallery-group">
-  <img class="gallery-group-img" src='https://s3-tpe-01.russel053.com/delia/life-blog/gallery/230723/57.jpg' alt="Group Image Gallery">
+  <img class="gallery-group-img" src='https://s3-tpe-01.russel053.com/delia/life-blog/gallery/230723/55.jpg' alt="Group Image Gallery">
   <figcaption>
-  <div class="gallery-group-name"></div>
+  <div class="gallery-group-name">23/07/23-1</div>
   <p>LoopInTheMirror</p>
   <a href='/gallery/tour-shooting/230723-1'></a>
   </figcaption>
@@ -529,7 +555,7 @@
   <figure class="gallery-group">
   <img class="gallery-group-img" src='https://s3-tpe-01.russel053.com/delia/life-blog/gallery/230723/08.jpg' alt="Group Image Gallery">
   <figcaption>
-  <div class="gallery-group-name"></div>
+  <div class="gallery-group-name">23/07/23-2</div>
   <p>LoopInTheMirror</p>
   <a href='/gallery/tour-shooting/230723-2'></a>
   </figcaption>
@@ -540,7 +566,7 @@
   <figure class="gallery-group">
   <img class="gallery-group-img" src='https://s3-tpe-01.russel053.com/delia/life-blog/gallery/230723/25.jpg' alt="Group Image Gallery">
   <figcaption>
-  <div class="gallery-group-name"></div>
+  <div class="gallery-group-name">23/07/23-3</div>
   <p>LoopInTheMirror</p>
   <a href='/gallery/tour-shooting/230723-3'></a>
   </figcaption>
@@ -571,24 +597,16 @@
 
     <!-- 分享 -->
     
-      <!-- https://github.com/overtrue/share.js -->
-<!-- 文章详情页的分享 -->
-<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-
-<script src="/js/shareJs/social-share.min.js"></script>
-</script>
-
-<style>
-  .social-share {
-    margin: 20px 0;
-  }
-</style>
-
-
-    
     
     <!-- 评论 -->
     <!-- 评论 -->
+
+  <div id="myComment">
+    
+      <div id="gitment-container"></div>
+
+    
+  </div>
 
 <!-- comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
 
@@ -830,8 +848,8 @@
         <div class="webinfo-item">
           <div>最後活動時間：</div>
           
-            <div id="last-update" style="display: none;">Thu Aug 24 2023 02:10:42 GMT+0800 (台北標準時間)</div>
-            <div id="last-update-show">2023-08-24 日</div>
+            <div id="last-update" style="display: none;">Fri Aug 25 2023 01:15:21 GMT+0800 (台北標準時間)</div>
+            <div id="last-update-show">2023-08-25 日</div>
           
         </div>
         
@@ -881,7 +899,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2023-08-24 日';
+            document.getElementById('last-update-show').innerHTML = '2023-08-25 日';
           }
         </script>
         
@@ -984,7 +1002,7 @@
 			clearInterval(this.time);
 		},
 		mounted() {
-			let prop = '' || 'https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp';
+			let prop = '' || '';
 			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
 			if (isImg) {
 				let img = prop.split(',');
@@ -1087,7 +1105,7 @@
       if (isDark) {
         this.FISH_COLOR = '#222'; // 暗黑色，有时间把这整成一个变量
       } else {
-        this.FISH_COLOR = '' || 'rgba(66, 185, 133, 0.8)';
+        this.FISH_COLOR = '' || 'rgba(131, 74, 139, 0.5)';
       }
     },
     setParameters: function () {
@@ -1727,6 +1745,71 @@
    
 
 <!-- 评论所需js -->
+
+  
+    <script type="text/javascript">
+  var utteranceCommon = {};
+
+  function check_utterance() {
+    let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('true');
+    if (isDark) {
+      utteranceCommon.Theme = 'github-dark';
+    } else {
+      utteranceCommon.Theme = 'github-light';
+    }
+
+    return document.getElementById("gitment-container");
+  }
+  comment_el = '#gitment-container';
+  load_utterance = function () {
+    if ($(comment_el).length) {
+      // 匿名函数，防止污染全局变量
+      const HEAD = check_utterance();
+
+      var utterances = document.createElement('script');
+      utterances.type = 'text/javascript';
+      utterances.async = true;
+      utterances.setAttribute('issue-term', 'pathname')
+      utterances.setAttribute('theme', utteranceCommon.Theme)
+      utterances.setAttribute('repo', '')
+      utterances.crossorigin = 'anonymous';
+      utterances.src = 'https://utteranc.es/client.js';
+      // content 是要插入评论的地方
+      document.getElementById('gitment-container').appendChild(utterances);
+
+    }
+  }
+
+  function dark_utterance() {
+    const HEAD = check_utterance();
+    if (!HEAD) return;
+    const message = {
+      type: 'set-theme',
+      theme: utteranceCommon.Theme
+    };
+    const utteranceIframe = document.querySelector('iframe');
+    utteranceIframe.contentWindow.postMessage(message, 'https://utteranc.es');
+  }
+
+  $(document).ready(load_utterance);
+  document.addEventListener('pjax:complete', function () {
+    load_utterance();
+  });
+
+  $('.dark').click(function () {
+    setTimeout(() => {
+      dark_utterance();
+    });
+  })
+
+</script>
+
+<style>
+  .utterances {
+    max-width: inherit !important;
+  }
+</style>
+  
 
 
 <!-- 鼠标点击特效 -->

@@ -22,7 +22,7 @@
 </script>
 
 
-  <title>關於我 | 小鈞🏳️‍⚧️🔞(♂️➡️♀️)</title>
+  <title>「特別」又不特別的跨性別歷程 | 小鈞🏳️‍⚧️🔞(♂️➡️♀️)</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://s3-tpe-01.russel053.com/delia/life-blog/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -470,6 +470,32 @@
   </div>
   
   
+    <div id="he-plugin-simple"></div>
+    <script>
+      WIDGET = {
+        CONFIG: {
+          "modules": "012",
+          "background": 5,
+          "tmpColor": "4A4A4A",
+          "tmpSize": 16,
+          "cityColor": "4A4A4A",
+          "citySize": 16,
+          "aqiSize": 16,
+          "weatherIconSize": 24,
+          "alertIconSize": 18,
+          "padding": "10px 10px 10px 10px",
+          "shadow": "1",
+          "language": "auto",
+          "borderRadius": 5,
+          "fixed": "false",
+          "vertical": "middle",
+          "horizontal": "center",
+          "key": "2784dd3fcb1e4f0f9a9b579bf69641f2"
+        }
+      }
+    </script>
+    <script defer src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script> 
+    
 </header>
         <!-- 内容区域 -->
         
@@ -486,14 +512,14 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp')">
+  background-position: center center;position: relative;background-image:url('https://s3-tpe-01.russel053.com/delia/life-blog/gallery/230722/25.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        關於我
+        「特別」又不特別的跨性別歷程
       </span>
     </div>
     
@@ -514,8 +540,10 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <p>準備中</p>
-<!-- # 八年女裝，不一樣的偽娘、跨性別歷程
+        <blockquote>
+<p>準備中</p>
+</blockquote>
+<!-- ## 
 
 大家好我是小鈞，目前是個完全女裝生活的爆肝工程師，假日會接一些旅拍、外拍，夢想成為專業大尺跨性別模特。
 
@@ -592,21 +620,6 @@
     
 
     <!-- 分享 -->
-    
-      <!-- https://github.com/overtrue/share.js -->
-<!-- 文章详情页的分享 -->
-<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-
-<script src="/js/shareJs/social-share.min.js"></script>
-</script>
-
-<style>
-  .social-share {
-    margin: 20px 0;
-  }
-</style>
-
-
     
     
     <!-- 评论 -->
@@ -859,8 +872,8 @@
         <div class="webinfo-item">
           <div>最後活動時間：</div>
           
-            <div id="last-update" style="display: none;">Thu Aug 24 2023 02:10:42 GMT+0800 (台北標準時間)</div>
-            <div id="last-update-show">2023-08-24 日</div>
+            <div id="last-update" style="display: none;">Fri Aug 25 2023 01:15:21 GMT+0800 (台北標準時間)</div>
+            <div id="last-update-show">2023-08-25 日</div>
           
         </div>
         
@@ -910,7 +923,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2023-08-24 日';
+            document.getElementById('last-update-show').innerHTML = '2023-08-25 日';
           }
         </script>
         
@@ -1013,7 +1026,7 @@
 			clearInterval(this.time);
 		},
 		mounted() {
-			let prop = '' || 'https://pic3.zhimg.com/80/v2-7cfc909ebe8d83683909846edd6b5232_1440w.webp';
+			let prop = '' || '';
 			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
 			if (isImg) {
 				let img = prop.split(',');
@@ -1116,7 +1129,7 @@
       if (isDark) {
         this.FISH_COLOR = '#222'; // 暗黑色，有时间把这整成一个变量
       } else {
-        this.FISH_COLOR = '' || 'rgba(66, 185, 133, 0.8)';
+        this.FISH_COLOR = '' || 'rgba(131, 74, 139, 0.5)';
       }
     },
     setParameters: function () {
